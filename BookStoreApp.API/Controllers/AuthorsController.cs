@@ -61,7 +61,7 @@ namespace BookStoreApp.API.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"Error performing GET in {nameof(GetAuthors)}");
+                _logger.LogError(ex, $"Error performing GET in {nameof(GetAuthor)}");
                 return StatusCode(500, Messages.Error500Message);
             }
         }
